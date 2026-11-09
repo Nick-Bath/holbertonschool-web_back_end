@@ -1,18 +1,17 @@
 #!/usr/bin/env python3
 
 
-"""Module: Basic Async Syntax"""
+"""Module: Concurrent coroutines with async"""
 
 
 import asyncio
-import random
 import importlib
 
 module = importlib.import_module("0-basic_async_syntax")
 wait_random = module.wait_random
 
 
-async def wait_n(n: int, max_delay: int) -> list:
+async def wait_n(n: int, max_delay: int) -> list[float]:
     """spawns wait_random n times with max_delay, returns delay list ASC"""
 
     delay_list = []
